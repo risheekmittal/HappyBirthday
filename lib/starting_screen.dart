@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'package:confetti/confetti.dart';
 import 'dart:math';
-import 'package:flutter_icons/flutter_icons.dart';
 import 'package:khushboo/main.dart';
 import 'dart:async';
 
@@ -64,7 +63,7 @@ class _StartingScreenState extends State<StartingScreen> {
       floatingActionButton: FloatingActionButton(onPressed: (){
         Navigator.push(context, MaterialPageRoute(builder: (context)=>const MyHomePage(title: "Khushboo"),));
       },
-        child: const Icon(FlutterIcons.play_circle_faw5,color: Colors.white,),
+        child: const Icon(Icons.play_arrow,color: Colors.white,),
         backgroundColor: const Color(0xff13195b),),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       body: Column(
