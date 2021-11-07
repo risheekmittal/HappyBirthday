@@ -36,3 +36,9 @@ flutter:
     - family: Mochiy
       fonts:
         - asset: fonts/MochiyPopPOne-Regular.ttf
+    - family: Kaushan
+      fonts:
+        - asset: fonts/KaushanScript-Regular.otf
+    - family: Pacifico
+      fonts:
+        - asset: fonts/Pacifico.ttf
