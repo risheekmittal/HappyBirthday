@@ -82,7 +82,7 @@ class _StartingScreenState extends State<StartingScreen> {
             padding: const EdgeInsets.only(right:16.0),
             child: Align(
               alignment: Alignment.topCenter,
-                child: Text("$_start",style: const TextStyle(fontWeight: FontWeight.w900,fontSize: 50),)),
+                child: Text("$_start",style: const TextStyle(fontWeight: FontWeight.w900,fontFamily: "Kaushan",fontSize: 50),)),
           ),
           Stack(
             children: <Widget>[
@@ -119,15 +119,9 @@ class _StartingScreenState extends State<StartingScreen> {
               ),
              Column(
                children: const [
-                 Padding(
-                   padding: EdgeInsets.only(top:5.0,left: 20),
-                   child: Text(" Happiee ",style: TextStyle(color: Color(0xff13195b),fontWeight: FontWeight.w900,fontSize: 90),),
-                 ),
+                 Center(child: Text(" Happiee ",style: TextStyle(color: Color(0xff13195b),fontFamily: "Pacifico",fontWeight: FontWeight.w900,fontSize: 90),)),
                  SizedBox(height: 2,),
-                 Padding(
-                   padding: EdgeInsets.only(left:100.0),
-                   child: Text("                      Birthday ",style: TextStyle(color: Color(0xff13195b),fontWeight: FontWeight.w900,fontSize: 50),),
-                 )
+                 Center(child: Text("Birthday",style: TextStyle(color: Color(0xff13195b),fontFamily: "Pacifico",fontWeight: FontWeight.w900,fontSize: 50),))
                ],
              )
             ],

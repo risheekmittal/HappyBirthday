@@ -6,6 +6,7 @@ import 'package:khushboo/miscellaneous.dart';
 import 'package:khushboo/solo.dart';
 import 'package:khushboo/starting_screen.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
+import 'package:khushboo/to_do_list.dart';
 
 void main() {
   runApp(const MyApp());
@@ -218,19 +219,19 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       floatingActionButton: SpeedDial(
         backgroundColor: Colors.black,
-        animatedIcon: AnimatedIcons.close_menu,
+        animatedIcon: AnimatedIcons.menu_close,
         children: [
           SpeedDialChild(
             child: const Icon(Icons.article),
-            label: 'Birthday Note',
+            label: 'Note',
             backgroundColor: Colors.pink,
-            onTap: (){}
+              onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>const Notes()));}
           ),
           SpeedDialChild(
               child: const Icon(Icons.article),
-              label: 'To-do List',
+              label: 'Our Moments',
               backgroundColor: Colors.purple,
-              onTap: (){}
+              onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>const ToDoList()));}
           )
         ],
       ),
