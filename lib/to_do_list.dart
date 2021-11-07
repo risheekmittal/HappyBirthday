@@ -9,7 +9,7 @@ class ToDoList extends StatelessWidget {
       home: Container(
         decoration: const BoxDecoration(
         image: DecorationImage(
-            image: AssetImage('paper.jpg'),
+            image: AssetImage('assets/paper.jpg'),
             fit: BoxFit.cover),),
             child: ListView(
               physics: const AlwaysScrollableScrollPhysics(),
@@ -19,13 +19,13 @@ class ToDoList extends StatelessWidget {
                 padding: EdgeInsets.only(left: 70.0, right: 35),
                 child: SizedBox(
                   height: 400,width: 300,
-                    child: Image(image: AssetImage("list1.jpeg"))),
+                    child: Image(image: AssetImage("assets/list1.jpeg"))),
               ),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 50.0),
               child: SizedBox(
                   height: 400,width: 300,
-                  child: Image(image: AssetImage("list2.jpeg"))),
+                  child: Image(image: AssetImage("assets/list2.jpeg"))),
             ),
 
           ],
@@ -42,7 +42,7 @@ class Notes extends StatelessWidget {
     return Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-              image: AssetImage('paper.jpg'),
+              image: AssetImage('assets/paper.jpg'),
               fit: BoxFit.cover),),
         child: ListView(
           physics: const AlwaysScrollableScrollPhysics(),
@@ -52,7 +52,7 @@ class Notes extends StatelessWidget {
               padding: EdgeInsets.only(left: 70.0, right: 35),
               child: SizedBox(
                   height: 400,width: 300,
-                  child: Image(image: AssetImage("note1.jpeg"))),
+                  child: Image(image: AssetImage("assets/note1.jpeg"))),
             ),
           ],
           scrollDirection: Axis.horizontal,)
